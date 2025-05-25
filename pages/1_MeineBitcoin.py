@@ -29,7 +29,7 @@ st.dataframe(df)
 # Form to add new purchase
 with st.form("add_purchase"):
     date_input = st.date_input("Datum", value=date.today())
-    amount = st.number_input("Menge (BTC)", min_value=0.0, step=0.0001)
+    amount = st.number_input("Menge (BTC)", min_value=0.0, format="%.8f", step=0.00000001)
     price_chf = st.number_input("Preis pro BTC in CHF", min_value=0.0, step=0.01)
     submitted = st.form_submit_button("Kauf hinzufügen")
 

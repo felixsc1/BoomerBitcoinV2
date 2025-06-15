@@ -75,7 +75,7 @@ def get_current_bitcoin_price():
     return data["bitcoin"]["chf"]
 
 st.title("Gewinn")
-st.write("Die blaue Kurve ist der Bitcoin Preis über die Zeit. Bei den roten Punkten hast du Bitcoin gekauft.")
+st.write("Hoi Werner! Die blaue Kurve ist der Bitcoin Preis über die Zeit. Bei den roten Punkten hast du Bitcoin gekauft.")
 
 # Load purchases from MongoDB
 df_purchases = pd.DataFrame(list(purchases.find({}, {'_id': 0})))
